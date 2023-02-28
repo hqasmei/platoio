@@ -6,7 +6,6 @@ export const revalidate = 0 // disable cache
 
 export default async function Home() {
   const data = await redis.srandmember<string>("plato")
-
   return (
     <main className="grid h-screen place-items-center">
       <div className="mx-12 rounded-xl bg-slate-100 px-6 py-6 shadow-xl md:mx-48 flex-1">
