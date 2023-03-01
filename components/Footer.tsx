@@ -3,10 +3,10 @@ import { FaGithub, FaTwitter } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="mb-2 py-4 text-center">
+    <footer className="mb-2 text-center">
       <div className="mx-auto max-w-6xl border-t">
-        <div className="mx-4 mt-4 flex flex-row justify-between">
-          <p className="text-black">
+        <div className="mx-4 mt-2 flex flex-col-reverse md:flex-row md:justify-between md:space-y-0">
+          <div className=" text-black md:mb-0">
             Built with{" "}
             <a
               href="https://nextjs.org/"
@@ -43,24 +43,24 @@ const Footer = () => {
             >
               Vercel
             </a>
-          </p>
-          <div className="flex flex-row space-x-4">
-            <a
-              href="https://github.com/hqasmei/platoio"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub
-                size={25}
-                className="text-neutral-800 hover:text-neutral-500"
-              />
-            </a>
+          </div>
+          <div className="mb-2 flex flex-row justify-center space-x-4 md:mb-0">
             <a
               href="https://twitter.com/hqasmei"
               target="_blank"
               rel="noreferrer"
             >
               <FaTwitter
+                size={25}
+                className="text-neutral-800 hover:text-neutral-500"
+              />
+            </a>
+            <a
+              href="https://github.com/hqasmei/platoio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub
                 size={25}
                 className="text-neutral-800 hover:text-neutral-500"
               />

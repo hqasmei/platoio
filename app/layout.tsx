@@ -5,7 +5,7 @@ import Footer from "@/components/Footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "PlatoIO | Quotes from Plato",
+  title: "PlatoIO | Daily Quotes",
   description: "Welcome to PlatoIO",
 }
 
@@ -21,7 +21,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="">
+      <body >
         <Navbar />
         {children}
         <Footer />

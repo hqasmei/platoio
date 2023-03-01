@@ -1,15 +1,19 @@
 import React from "react"
-import { FaGithub, FaTwitter } from "react-icons/fa"
+import Image from "next/image"
+import { FaGithub } from "react-icons/fa"
 
 const Navbar = () => {
   return (
-    <header className="absolute top-0 mb-2 w-full flex-none  bg-white lg:border-b lg:border-slate-900/10">
-      <div className="mx-auto max-w-6xl ">
-        <div className="mx-4 border-b border-slate-900/10 py-4  lg:mx-0 lg:border-0 lg:px-8">
+    <header className="absolute top-0 w-full flex-none border-b border-slate-900/10 bg-white">
+      <div className="mx-auto max-w-6xl">
+        <div className="mx-4 my-2">
           <div className="relative flex items-center justify-between">
-            <a className="text-lg font-bold" href="/">
-              PlatoIO
-            </a>
+            <div className="flex flex-row items-center justify-center space-x-3">
+              <Image src="/logo.png" alt="" width={35} height={35} />
+              <p className="text-xl font-bold hover:text-neutral-500">
+                PlatoIO
+              </p>
+            </div>
             <div className="flex flex-row items-center justify-center space-x-4">
               <a
                 href="https://github.com/hqasmei/platoio"
